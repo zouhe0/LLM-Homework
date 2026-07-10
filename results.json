@@ -1,0 +1,36 @@
+{
+  "num_samples": 8,
+  "base_avg_reward": 0.455,
+  "ft_avg_reward": 0.6379,
+  "delta": 0.1829,
+  "delta_pct": 40.2,
+  "base_scores": [
+    0.4337,
+    0.6525,
+    0.4336,
+    0.4426,
+    0.4025,
+    0.4336,
+    0.4025,
+    0.4386
+  ],
+  "ft_scores": [
+    0.5884,
+    0.8536,
+    0.6234,
+    0.6126,
+    0.5745,
+    0.6231,
+    0.6255,
+    0.6021
+  ],
+  "base_model": "gemma3-270m",
+  "adapter": "adapter",
+  "config": {
+    "max_new_tokens": 1024,
+    "lora_r": 4,
+    "lora_alpha": 16,
+    "learning_rate": 0.0005,
+    "num_epochs": 3
+  }
+}

@@ -1,0 +1,22 @@
+# LoRA fine-tuning config for Gemma 3 270M
+model_name_or_path: "gemma3-270m"
+data_path: "data/train.jsonl"
+valid_path: "data/valid.jsonl"
+output_dir: "adapter"
+
+# LoRA parameters
+lora_r: 4
+lora_alpha: 16
+lora_dropout: 0.05
+target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+
+# Training parameters
+learning_rate: 5.0e-4
+num_epochs: 3
+batch_size: 1
+gradient_accumulation_steps: 4
+max_seq_length: 512
+warmup_steps: 5
+
+# Loss masking
+mask_prompt: true
